@@ -1,0 +1,157 @@
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Open-Sans', sans-serif;
+    background-color: rgb(239, 239, 239);
+}
+
+/* Header and Logo */
+.site-header {
+    background-color: rgb(67, 40, 28);
+    color: rgb(251, 242, 192);
+    height: 100px;
+}
+
+.logo-placement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.logo-image {
+    width: 40px;
+    margin-right: 5px;
+}
+
+.brand {
+    font-size: 1.2rem;
+}
+
+/* All Content */
+.main-content {
+    padding: 50px 30px;
+    display: grid;
+    grid-template-areas: 
+        "items name"
+        ". payment"
+        "order-details order-details"
+        "button button";
+}
+
+.card {
+    background-color: rgb(237, 224, 212);
+    margin: 20px;
+    padding: 0 20px 30px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+.items {
+    grid-area: items;
+}
+
+.section-title {
+    text-transform: uppercase;
+    color: rgb(152, 112, 75);
+}
+
+.single-item {
+    display: grid;
+    grid-template-columns: .5fr 7fr 1fr;
+    border-bottom: 3px solid rgb(229, 203, 178);
+}
+
+.single-item:nth-last-child(1) {
+    border: none;
+}
+
+.quantity {
+    color: rgb(93, 98, 79);
+}
+
+.item-details {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+.options {
+    color: rgb(152, 112, 75);
+    margin-top: 10px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.name {
+    grid-area: name;
+    height: 200px;
+}
+
+.payment {
+    grid-area: payment;
+    margin-top: -150px;
+}
+
+.form-group {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-label {
+    background-color: rgb(237, 224, 212);
+    color: rgb(152, 112, 75);
+    position: absolute;
+    font-size: .8rem;
+    left: 25px;
+    top: -7px;
+    padding: 0 3px;
+}
+
+.text-field {
+    background-color: rgb(237, 224, 212);
+    border-color: rgb(152, 112, 75);
+    width: 100%;
+    padding: 8px 0;
+    padding-left: 25px;
+    border-radius: 20px;
+}
+
+.order-details {
+    grid-area: order-details;
+    margin: 100px auto 30px auto;
+    width: 300px;
+}
+
+.line-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -15px;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.place-order {
+    grid-area: button;
+    background-color: rgb(221, 184, 146);
+    border-color: rgb(221, 184, 146);
+    border-radius: 20px;
+    padding: 15px 0;
+    margin: 0 100px;
+    font-weight: bold;
+}

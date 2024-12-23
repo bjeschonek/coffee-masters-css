@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Masters</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <div class="page">
+
+        <header class="site-header">
+            <div class="logo-placement">
+                <img src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png" alt="Coffee Masters Logo" class="logo-image">
+                <h1 class="brand">Coffee Masters</h1>
+            </div>
+        </header>
+
+        <div class="main-content">
+
+            <section class="card items">
+                <h2 class="section-title">Items</h2>
+
+                <div class="single-item">
+                    <p class="quantity">1x</p>
+                    <ul class="item-details">
+                        <li class="item-name">Cappuccino</li>
+                        <li class="options">Lite Foam</li>
+                    </ul>
+                    <p class="price">$3.35</p>
+                </div>
+
+                <div class="single-item">
+                    <p class="quantity">1x</p>
+                    <ul class="item-details">
+                        <li class="item-name">Cappuccino</li>
+                        <li class="options">Lite Milk</li>
+                        <li class="options">Double Espresso</li>
+                    </ul>
+                    <p class="price">$3.85</p>
+                </div>
+
+                <div class="single-item">
+                    <p class="quantity">1x</p>
+                    <ul class="item-details">
+                        <li class="item-name">Croissant</li>
+                        <li class="options">Butter</li>
+                    </ul>
+                    <p class="price">$2.45</p>
+                </div>
+            </section>
+
+            <section class="card name">
+                <h2 class="section-title">Name</h2>
+                <div class="form-group">
+                    <label for="name" class="form-label">Name for Order</label>
+                    <input type="text" id="name" class="text-field" placeholder="Enter your name">
+                </div>
+            </section>
+
+            <section class="card payment">
+                <h2 class="section-title">Payment</h2>
+                <div class="form-group">
+                    <label for="cc" class="form-label">Card Number</label>
+                    <input type="text" id="cc" class="text-field" placeholder="Credit card number">
+                </div>
+                <div class="form-group">
+                    <label for="cvv" class="form-label">CVV</label>
+                    <input type="text" id="cvv" class="text-field" placeholder="CVV">
+                </div>
+            </section>
+
+            <section class="order-details">
+                <div class="line-item">
+                    <p>Subtotal:</p>
+                    <p>$9.65</p>
+                </div>
+                <div class="line-item">
+                    <p>Tax:</p>
+                    <p>$0.82</p>
+                </div>
+                <div class="line-item total">
+                    <p>Total:</p>
+                    <p>$10.47</p>
+                </div>
+            </section>
+
+            <button class="place-order">Place Order</button>
+        </div>
+    </div>
+</body>
+</html>
